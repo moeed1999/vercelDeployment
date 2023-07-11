@@ -5,7 +5,7 @@ const app = express();
 const port = process.env.PORT || 5001;
 
 app.use('/',(req,res)=>{
-    res.send('server is runningss')
+    res.send(`server is runningss ${port}`)
 })
 
 app.listen(port , ()=>{
